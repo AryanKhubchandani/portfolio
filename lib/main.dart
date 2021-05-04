@@ -55,11 +55,10 @@ Widget home(BuildContext context) {
         ),
       ),
       Card(
-          color: Colors.white,
-          elevation: 5,
-          child: Stack(children: [
-            (InkWell(onTap: openPhone)),
-            Padding(
+        color: Colors.white,
+        elevation: 5,
+        child: (InkWell(
+            child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -67,69 +66,74 @@ Widget home(BuildContext context) {
                   Icon(
                     Icons.phone,
                     color: Colors.green,
+                    size: 35,
                   ),
                   Text(
                     '+91 9999401575',
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            onTap: openPhone)),
+      ),
+      Card(
+        color: Colors.white,
+        elevation: 5,
+        child: (InkWell(
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Icon(
+                    Icons.mail,
+                    color: Colors.yellow,
+                    size: 35,
+                  ),
+                  Text(
+                    'aryan.khubchandani@gmail.com',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                    ),
                   )
                 ],
               ),
             ),
-          ])),
-      Card(
-        color: Colors.white,
-        elevation: 5,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Icon(
-                Icons.mail,
-                color: Colors.yellow,
-              ),
-              Text(
-                'aryan.khubchandani@gmail.com',
-                style: TextStyle(color: Colors.black),
-              )
-            ],
-          ),
-        ),
+            onTap: openPhone)),
       ),
       Card(
         color: Colors.white,
         elevation: 5,
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+          padding: const EdgeInsets.fromLTRB(50, 0, 50, 0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              SizedBox(
-                width: 55,
-              ),
               IconButton(
                 icon: FaIcon(FontAwesomeIcons.linkedin),
-                iconSize: 50,
+                iconSize: 40,
                 onPressed: openLi,
               ),
               IconButton(
                 icon: FaIcon(FontAwesomeIcons.github),
-                iconSize: 50,
+                iconSize: 40,
                 onPressed: openGit,
               ),
               IconButton(
                   icon: FaIcon(FontAwesomeIcons.instagram),
-                  iconSize: 50,
+                  iconSize: 40,
                   onPressed: openIg),
             ],
           ),
         ),
       ),
-      ListTile(
-        title: Text('Profiles'),
-      ),
-      ListTile(
-        title: Text("ABOUT ME"),
+      Card(
+        Text("ABOUT ME"),
         // "About Me:\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them."),
       ),
       ListTile(
