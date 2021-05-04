@@ -36,7 +36,6 @@ Widget home(BuildContext context) {
       ListTile(
         title: Text(
           'I am Aryan Khubchandani',
-          ),
         ),
       ),
       ListTile(
