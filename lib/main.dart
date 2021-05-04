@@ -33,9 +33,22 @@ Widget home(BuildContext context) {
       ListTile(
         title: Text('Hey There!'),
       ),
+      Padding(
+        padding: const EdgeInsets.all(21.0),
+        child: CircleAvatar(
+          radius: 80,
+          backgroundImage: AssetImage(
+            'images/pic.jpg',
+          ),
+        ),
+      ),
       ListTile(
         title: Text(
           'I am Aryan Khubchandani',
+          style: TextStyle(
+            color: Colors.black,
+            fontSize: 30,
+          ),
         ),
       ),
       ListTile(
