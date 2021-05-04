@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,17 +46,54 @@ Widget home(BuildContext context) {
       ListTile(
         title: Text(
           'I am Aryan Khubchandani',
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.black,
             fontSize: 30,
           ),
         ),
       ),
-      ListTile(
-        title: Text('Contact Number'),
-      ),
-      ListTile(
-        title: Text('Email ID'),
+      Card(
+          color: Colors.white,
+          elevation: 5,
+          child: Stack(children: [
+            (InkWell(onTap: openPhone)),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Icon(
+                    Icons.phone,
+                    color: Colors.green,
+                  ),
+                  Text(
+                    '+91 9999401575',
+                    style: TextStyle(color: Colors.black),
+                  )
+                ],
+              ),
+            ),
+          ])),
+      Card(
+        color: Colors.white,
+        elevation: 5,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(40, 10, 40, 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Icon(
+                Icons.mail,
+                color: Colors.yellow,
+              ),
+              Text(
+                'aryan.khubchandani@gmail.com',
+                style: TextStyle(color: Colors.black),
+              )
+            ],
+          ),
+        ),
       ),
       ListTile(
         title: Text('Profiles'),
@@ -71,4 +109,22 @@ Widget home(BuildContext context) {
       ),
     ],
   );
+}
+
+openPhone() async {
+  const url = 'tel:+91 9999401575';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+openMail() async {
+  const url = 'mailto:aryan.khubchandani@gmail.com';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
