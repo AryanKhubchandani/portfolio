@@ -133,21 +133,108 @@ Widget home(BuildContext context) {
         ),
       ),
       Card(
-        Text("ABOUT ME"),
-        // "About Me:\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them."),
+        color: Colors.white,
+        elevation: 0,
+        child: Container(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Column(
+            children: [
+              Text(
+                "ABOUT ME",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them.",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
-      ListTile(
-        title: Text('Education'),
-        // I am currently a fresher in VIT Vellore, pursuing a B.Tech degree in Commputer Science.
-        // I completed my schooling from Delhi Public School Indirapuram. I scored 97% in PCM in class XII Boards.
+      Card(
+        color: Colors.white,
+        elevation: 0,
+        child: Container(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Column(
+            children: [
+              Text(
+                'EDUCATION',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "\nI am currently a fresher in VIT Vellore, pursuing a B.Tech degree in Commputer Science.\n\nI completed my schooling from Delhi Public School Indirapuram. I scored 97% in PCM in class XII Boards.s",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
-      ListTile(
-        title: Text('Languages'),
-        // I didn't have any experience in coding in my school life, but I started to work on it since the college started and here are the languages I have tried my hands on so far ( and trying to improve my skills further in them: Python, C, Dart, Kotlin, HTML, CSS
+      Card(
+        color: Colors.white,
+        elevation: 0,
+        child: Container(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Column(
+            children: [
+              Text(
+                'LANGUAGES',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "\nI didn't have any experience in coding in my school life, but I started to work on it since the college started and here are the languages I have tried my hands on so far ( and trying to improve my skills further in them: Python, C, Dart, Kotlin, HTML, CSS",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
-      ListTile(
-        title: Text('Hobbies'),
-        // I am a football enthusiast, but I would be up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console
+      Card(
+        color: Colors.white,
+        elevation: 0,
+        child: Container(
+          padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
+          child: Column(
+            children: [
+              Text(
+                'HOBBIES',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 30,
+                ),
+              ),
+              Text(
+                "\nI am a football enthusiast, but I would be up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     ],
   );
