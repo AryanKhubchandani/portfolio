@@ -59,15 +59,15 @@ flutter:
         
   
   assets:
-  - images/pic.jpg
-  - images/bg.jpg
-  - images/python.png
-  - images/c.png
-  - images/flutter.png
-  - images/dart.png
-  - images/html.png
-  - images/css.png
-  - images/kotlin.png
+    - images/pic.jpg
+    - images/bg.jpg
+    - images/python.png
+    - images/c.png
+    - images/flutter.png
+    - images/dart.png
+    - images/html.png
+    - images/css.png
+    - images/kotlin.png
 
  
 

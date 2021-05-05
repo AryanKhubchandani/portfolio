@@ -338,13 +338,13 @@ Widget home(BuildContext context) {
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
                                     image: AssetImage(
-                                      'c.png',
+                                      'images/c.png',
                                     ),
                                     width: 60.0,
                                     height: 60.0,
@@ -357,7 +357,6 @@ Widget home(BuildContext context) {
                                   " C",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontFamily: "Sniglet",
                                     fontSize: 20,
                                   ),
                                 ),
@@ -368,31 +367,27 @@ Widget home(BuildContext context) {
                             children: <Widget>[
                               Padding(
                                 padding:
-                                    const EdgeInsets.fromLTRB(15, 20, 15, 10),
+                                    const EdgeInsets.fromLTRB(15, 10, 15, 10),
                                 child: Container(
                                   padding:
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('python.png'),
+                                    image: AssetImage('images/python.png'),
                                     width: 60.0,
                                     height: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                "  Python",
+                                " Python",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
                                   fontSize: 20,
                                 ),
                               ),
@@ -402,31 +397,27 @@ Widget home(BuildContext context) {
                             children: <Widget>[
                               Padding(
                                 padding:
-                                    const EdgeInsets.fromLTRB(15, 20, 15, 10),
+                                    const EdgeInsets.fromLTRB(15, 0, 15, 10),
                                 child: Container(
                                   padding:
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('dart.png'),
+                                    image: AssetImage('images/dart.png'),
                                     height: 60.0,
                                     width: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                "  Dart",
+                                " Dart",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
                                   fontSize: 20,
                                 ),
                               ),
@@ -447,25 +438,21 @@ Widget home(BuildContext context) {
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('html.png'),
+                                    image: AssetImage('images/html.png'),
                                     height: 60.0,
                                     width: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                "   HTML",
+                                "  HTML",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
                                   fontSize: 17,
                                 ),
                               ),
@@ -481,25 +468,21 @@ Widget home(BuildContext context) {
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('flutter.png'),
+                                    image: AssetImage('images/flutter.png'),
                                     height: 60.0,
                                     width: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                "  Flutter",
+                                " Flutter",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
                                   fontSize: 20,
                                 ),
                               ),
@@ -515,25 +498,21 @@ Widget home(BuildContext context) {
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('css.png'),
+                                    image: AssetImage('images/css.png'),
                                     height: 60.0,
                                     width: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                " CSS",
+                                "CSS",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
                                   fontSize: 17,
                                 ),
                               ),
@@ -554,26 +533,22 @@ Widget home(BuildContext context) {
                                       const EdgeInsets.fromLTRB(10, 10, 10, 10),
                                   decoration: BoxDecoration(
                                     border: Border.all(
-                                      color: Colors.white,
+                                      color: Colors.white60,
                                     ),
                                     borderRadius: BorderRadius.circular(20.0),
                                   ),
                                   child: Image(
-                                    image: AssetImage('kotlin.png'),
+                                    image: AssetImage('images/kotlin.png'),
                                     height: 60.0,
                                     width: 60.0,
                                   ),
                                 ),
                               ),
-                              SizedBox(
-                                height: 10,
-                              ),
                               Text(
-                                "  KOTLIN",
+                                " Kotlin",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: "Sniglet",
-                                  fontSize: 17,
+                                  fontSize: 20,
                                 ),
                               ),
                             ],
