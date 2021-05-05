@@ -590,7 +590,7 @@ Widget home(BuildContext context) {
                   ],
                 ),
                 Text(
-                  "\nI am a football enthusiast, but I am up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console\n",
+                  "\nI am a football enthusiast, but I am also up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console\n",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 17,
