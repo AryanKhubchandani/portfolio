@@ -50,7 +50,7 @@ flutter:
   assets:
   - images/pic.jpg
   - images/bg.jpg
-  - images/pyt.png
+  - images/python.png
   - images/c.png
   - images/flutter.png
   - images/dart.png
