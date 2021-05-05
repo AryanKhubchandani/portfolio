@@ -68,10 +68,10 @@ Widget home(BuildContext context) {
           'I am Aryan Khubchandani',
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 33,
-            fontWeight: FontWeight.w600,
-          ),
+              color: Colors.white,
+              fontSize: 33,
+              fontWeight: FontWeight.w600,
+              fontStyle: Awe),
         ),
       ),
       Container(
@@ -192,7 +192,7 @@ Widget home(BuildContext context) {
                   ],
                 ),
                 Text(
-                  "\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them.",
+                  "\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them.\n",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -270,7 +270,7 @@ Widget home(BuildContext context) {
                   ),
                 ),
                 Text(
-                  "\nI completed my schooling from DPS Indirapuram. I scored 97% in PCM in class XII Boards.",
+                  "\nI completed my schooling from DPS Indirapuram. I scored 97% in PCM in class XII Boards.\n",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
@@ -605,7 +605,7 @@ Widget home(BuildContext context) {
                   ],
                 ),
                 Text(
-                  "\nI am a football enthusiast, but I am up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console",
+                  "\nI am a football enthusiast, but I am up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console\n",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
