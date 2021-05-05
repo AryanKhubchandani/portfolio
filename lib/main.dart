@@ -133,7 +133,7 @@ Widget home(BuildContext context) {
                   ],
                 ),
               ),
-              onTap: openPhone)),
+              onTap: openMail)),
         ),
       ),
       Container(
