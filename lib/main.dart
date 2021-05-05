@@ -14,33 +14,24 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Portfolio',
       theme: ThemeData(
-        primarySwatch: Colors.grey,
         fontFamily: 'Itim',
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'PORTFOLIO',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 36,
-              fontFamily: 'Anton',
+          body: Stack(
+        children: <Widget>[
+          Container(
+            constraints: BoxConstraints.expand(),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage(
+                    "images/bg.jpg",
+                  ),
+                  fit: BoxFit.cover),
             ),
+            child: BodyLayout(),
           ),
-        ),
-        body: Container(
-          constraints: BoxConstraints.expand(),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(
-                  "images/bg.jpg",
-                ),
-                fit: BoxFit.cover),
-          ),
-          child: BodyLayout(),
-        ),
-      ),
+        ],
+      )),
     );
   }
 }
@@ -55,16 +46,17 @@ class BodyLayout extends StatelessWidget {
 Widget home(BuildContext context) {
   return ListView(
     children: <Widget>[
-      // ListTile(
-      //   title: Text(
-      //     'Hey There!',
-      //     style: TextStyle(
-      //       color: Colors.white,
-      //       fontSize: 25,
-      //       fontFamily: 'Anton',
-      //     ),
-      //   ),
-      // ),
+      ListTile(
+        title: Text(
+          'PORTFOLIO',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white70,
+            fontSize: 25,
+            fontFamily: 'Anton',
+          ),
+        ),
+      ),
       Padding(
         padding: const EdgeInsets.all(25.0),
         child: CircleAvatar(
