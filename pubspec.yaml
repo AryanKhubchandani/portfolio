@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   font_awesome_flutter: ^9.0.0
   url_launcher: ^6.0.3
+  
 
 dev_dependencies:
   flutter_test:
@@ -48,6 +49,16 @@ flutter:
   
   assets:
   - images/pic.jpg
+  - images/bg.jpg
+  - images/pyt.png
+  - images/c.png
+  - images/flutter.png
+  - images/dart.png
+  - images/html.png
+  - images/css.png
+  - images/kotlin.png
+
+ 
 
   # To add assets to your application, add an assets section, like this:
   # assets:
