@@ -15,10 +15,20 @@ class MyApp extends StatelessWidget {
       title: 'Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.grey,
-        backgroundColor: Colors.transparent,
+        fontFamily: 'Itim',
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Portfolio')),
+        appBar: AppBar(
+          title: Text(
+            'PORTFOLIO',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 36,
+              fontFamily: 'Anton',
+            ),
+          ),
+        ),
         body: Container(
           constraints: BoxConstraints.expand(),
           decoration: BoxDecoration(
@@ -45,17 +55,18 @@ class BodyLayout extends StatelessWidget {
 Widget home(BuildContext context) {
   return ListView(
     children: <Widget>[
-      ListTile(
-        title: Text(
-          'Hey There!',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 20,
-          ),
-        ),
-      ),
+      // ListTile(
+      //   title: Text(
+      //     'Hey There!',
+      //     style: TextStyle(
+      //       color: Colors.white,
+      //       fontSize: 25,
+      //       fontFamily: 'Anton',
+      //     ),
+      //   ),
+      // ),
       Padding(
-        padding: const EdgeInsets.all(21.0),
+        padding: const EdgeInsets.all(25.0),
         child: CircleAvatar(
           radius: 100,
           backgroundImage: AssetImage(
@@ -65,13 +76,14 @@ Widget home(BuildContext context) {
       ),
       ListTile(
         title: Text(
-          'I am Aryan Khubchandani',
+          'Aryan Khubchandani',
           textAlign: TextAlign.center,
           style: TextStyle(
-              color: Colors.white,
-              fontSize: 33,
-              fontWeight: FontWeight.w600,
-              fontStyle: Awe),
+            color: Colors.white,
+            fontSize: 36,
+            fontWeight: FontWeight.w600,
+            fontFamily: 'Anton',
+          ),
         ),
       ),
       Container(
@@ -94,7 +106,7 @@ Widget home(BuildContext context) {
                       '+91 9999401575',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 20,
                       ),
                     ),
                   ],
@@ -123,7 +135,7 @@ Widget home(BuildContext context) {
                       'aryan.khubchandani@gmail.com',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 15,
+                        fontSize: 20,
                       ),
                     )
                   ],
@@ -187,6 +199,7 @@ Widget home(BuildContext context) {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 30,
+                        fontFamily: 'Anton',
                       ),
                     ),
                   ],
@@ -195,7 +208,7 @@ Widget home(BuildContext context) {
                   "\nI'm Aryan, an enthusiastic fresher living in Noida, Delhi NCR who wants to become the best in my field by hard work, perseverance, willingness to learn and also gaining exposure in the field. I have developed a keen interest in programming which drives my desire to accomplish great things in my career. I am looking forward to enhance my technical knowledge by exploring diffferent types of projects by implementing them.\n",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 15,
+                    fontSize: 17,
                   ),
                 ),
               ],
@@ -226,6 +239,7 @@ Widget home(BuildContext context) {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 30,
+                        fontFamily: 'Anton',
                       ),
                     ),
                   ],
@@ -246,14 +260,15 @@ Widget home(BuildContext context) {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 22,
+                    fontFamily: 'Anton',
                   ),
                 ),
                 Text(
                   "\nI am currently a fresher in VIT Vellore, pursuing a B.Tech degree in Commputer Science.\n\n",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 15,
+                    fontSize: 17,
                   ),
                 ),
                 Icon(
@@ -266,14 +281,15 @@ Widget home(BuildContext context) {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20,
+                    fontSize: 22,
+                    fontFamily: 'Anton',
                   ),
                 ),
                 Text(
                   "\nI completed my schooling from DPS Indirapuram. I scored 97% in PCM in class XII Boards.\n",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 15,
+                    fontSize: 17,
                   ),
                 ),
               ],
@@ -304,15 +320,16 @@ Widget home(BuildContext context) {
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 30,
+                          fontFamily: 'Anton',
                         ),
                       ),
                     ],
                   ),
                   Text(
-                    "\nI didn't have any experience in coding in my school life, but I started to work on it since the college started and here are the languages I have tried my hands on so far ( and trying to improve my skills further in them): ",
+                    "\nI didn't have any experience in coding in my school life, but I started to work on it since the college started and here are the languages I have tried my hands on so far ( and trying to improve my skills further in them):\n ",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 15,
+                      fontSize: 17,
                     ),
                   ),
                   Column(
@@ -600,6 +617,7 @@ Widget home(BuildContext context) {
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 30,
+                        fontFamily: 'Anton',
                       ),
                     ),
                   ],
@@ -608,7 +626,7 @@ Widget home(BuildContext context) {
                   "\nI am a football enthusiast, but I am up to play any sport at any given time. I also have interest in cooking and I like to try out new dishes every now and then. I also enjoy photography. In my chill time, I usually prefer to listen to music or play games on my console\n",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 15,
+                    fontSize: 17,
                   ),
                 ),
               ],
